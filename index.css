@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Martian Mono', monospace;
+    font-size: 16px;
+    margin: 0;
+    background-color: rgb(249, 249, 249);
+}
+
+header{
+    height: 20vh;
+    margin: auto 5vw;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+ul :nth-child(2){
+    width: auto;
+    border: solid red 2px;
+    border-radius: 5px;
+    background: transparent;
+    padding: 1rem 1.5rem;
+}
+
+ul :nth-child(2):hover{
+    background-color: rgba(254, 93, 38, 0.8);
+    border: solid black 2px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    color: white;
+}
+
+
+#logo{
+    width: 25%;
+    min-width: 80px;
+}
+
+hr{
+    width: 100%;
+    border-top: solid 3px rgba(13, 239, 25, 0.2);
+}
+
+.top-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5em;
+    margin: auto 5vw;
+}
+
+#avatar{
+    width: 10rem;
+    border-radius: 100%;
+}
+
+.banner{
+    background-color: #fe5d26;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 40vh;
+}
+
+.banner h2{
+    font-size: 1.9rem;
+    margin: auto 5vw;
+}
+
+.banner p{
+    margin: auto 5vw 10vh;
+    font-size: .9rem;
+}
+
+.skill{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid red 1px;
+    border-radius: 19px;
+    width: 80%;
+    margin: auto auto;
+    z-index: -1;
+    margin-top: -5vh;
+    z-index: 2;
+    background-color: aliceblue;
+    box-shadow: black 0px 8px 15px ;
+}
+
+.border{
+    border-right: solid gray 1px;
+}
+
+
+.column{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.orange{
+    color: #fe5d26;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.column :nth-child(2){
+    margin-bottom: 5vh;
+}
+
+.column :nth-child(3){
+    margin-bottom: 5vh;
+}
+
+.column :nth-child(5){
+    margin-bottom: 5vh;
+}
+
+.column :last-child{
+    margin-bottom: 5vh;
+}
+
+@media (max-width: 600px){
+    .skill{
+        flex-direction: column;
+    }
+    .border{
+        border-bottom: solid gray 1px;
+        border-right: none;
+    }
+}
+
+.projet{
+    height: 85vh;
+}
+
+.projet-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projet-top a{
+    border: solid rebeccapurple;
+    text-decoration: none;
+    border-radius: 5px;
+    padding-right: 1vw;
+}
+
+.projet-ima{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ima{
+    width: 500px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.ima:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
